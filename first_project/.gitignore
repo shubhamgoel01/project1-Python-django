@@ -1,6 +1,9 @@
 # Editor configuration files
 .vscode
 
+# Environment variable files
+.env
+
 # Linter configuration files
 .flake8
 
