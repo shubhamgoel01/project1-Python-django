@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}
+  blog
+{% endblock title %}
+
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        {% for contact in contacts %}
+            <div class="col-3">
+                <div class="card shadow-sm my-3">
+                    <div class="card-body">
+                        {{ contact.name }} <br>
+                        {{ contact.phone }} <br>
+                        {{ contact.email }} <br>
+                        {{ contact.desc }} <br>
+                        {{ contact.date }} <br>
+                    </div>                
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock body %}
+  
